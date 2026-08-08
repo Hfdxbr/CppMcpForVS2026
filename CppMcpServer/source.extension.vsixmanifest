@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/visualstudio/2003">
+  <Metadata>
+    <Identity Id="CppMcpServer.c7f8a9b0-1d2e-3f4a-5b6c-7d8e9f0a1b2c" Version="1.0.0" Language="en-US" Publisher="CppMcpServer" />
+    <DisplayName>CppMcpServer</DisplayName>
+    <Description>MCP Server for C++ projects in Visual Studio 2026. Provides HTTP JSON-RPC interface for build and navigation operations.</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[18.0,19.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[18.0,19.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[18.0,19.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.VisualStudio.Component.VC.CoreIde" DisplayName="C++ Core Features" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="$(CurrentProject)" d:Path="$(CurrentProject).dll" />
+  </Assets>
+</PackageManifest>

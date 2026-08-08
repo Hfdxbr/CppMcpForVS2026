@@ -1,0 +1,40 @@
+```
+# Visual Studio Code
+.vscode/
+
+# Visual Studio/MSBuild
+bin/
+obj/
+Debug/
+Release/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Dependencies
+packages/
+node_modules/
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.nupkg
+*.vsix
+
+# Temporary files
+*.tmp
+*.temp
+```
