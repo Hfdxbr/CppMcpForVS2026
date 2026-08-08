@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Externals>
+    <External guid="guidSHLMainMenu"/>
+  </Externals>
+  <Symbols>
+    <GuidSymbol name="guidCppMcpServerPackage" value="{c7f8a9b0-1d2e-3f4a-5b6c-7d8e9f0a1b2c}" />
+    <GuidSymbol name="guidCppMcpServerCmdSet" value="{d8e9f0a1-2b3c-4d5e-6f7a-8b9c0d1e2f3a}" />
+    
+    <IDSymbol name="MyMenuGroup" value="0x1020" />
+    <IDSymbol name="StartMcpServer" value="0x0100" />
+    <IDSymbol name="StopMcpServer" value="0x0101" />
+  </Symbols>
+
+  <Menus>
+    <Menu guid="guidCppMcpServerCmdSet" id="MyMenuGroup" priority="0x0600" type="Menu">
+      <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
+      <Strings>
+        <ButtonText>CppMcpServer</ButtonText>
+        <CommandName>CppMcpServerMenu</CommandName>
+      </Strings>
+    </Menu>
+  </Menus>
+
+  <Groups>
+    <Group guid="guidCppMcpServerCmdSet" id="MyMenuGroup" priority="0x0600">
+      <Parent guid="guidCppMcpServerCmdSet" id="MyMenuGroup" />
+    </Group>
+  </Groups>
+
+  <Buttons>
+    <Button guid="guidCppMcpServerCmdSet" id="StartMcpServer" priority="0x0100" type="Button">
+      <Parent guid="guidCppMcpServerCmdSet" id="MyMenuGroup" />
+      <Icon guid="guidImages" id="bmpPic1" />
+      <Strings>
+        <ButtonText>Start MCP Server</ButtonText>
+        <CommandName>StartMcpServer</CommandName>
+      </Strings>
+    </Button>
+    <Button guid="guidCppMcpServerCmdSet" id="StopMcpServer" priority="0x0101" type="Button">
+      <Parent guid="guidCppMcpServerCmdSet" id="MyMenuGroup" />
+      <Icon guid="guidImages" id="bmpPic2" />
+      <Strings>
+        <ButtonText>Stop MCP Server</ButtonText>
+        <CommandName>StopMcpServer</CommandName>
+      </Strings>
+    </Button>
+  </Buttons>
+  
+  <Bitmaps>
+    <Bitmap guid="guidImages" href="Resources\Images.png" usedList="bmpPic1, bmpPic2"/>
+  </Bitmaps>
+</CommandTable>
