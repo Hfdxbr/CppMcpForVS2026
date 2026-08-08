@@ -1,49 +1,82 @@
-# Visual Studio Code
-.vscode/
+```
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.pch
+*.sdf
+*.opensdf
+*.vcxproj.user
+*.sln.docstates
+*.userosscache
+*.suo
+*.user
+*.aps
+*.ncb
+*.log
+*.nupkg
+*.snupkg
+*.rsp
+*.compilation-platform
+*.compilation-properties
 
-# Visual Studio/Visual Studio C++
+# Dependencies
+packages/
+bin/
+obj/
 Debug/
 Release/
 x64/
 x86/
-*.vcxproj.user
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
+arm64/
+arm/
+publish/
 
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-build/
-bld/
-[Bb]in/
-[Oo]bj/
+# Visual Studio Code
+.vscode/
 
-# Visual C++ cache files
-ipch/
-*.aps
-*.ncb
-*.opendb
-*.opensdf
-*.sdf
-*.cachefile
+# Visual Studio
 *.VC.db
 *.VC.VC.opendb
+*.VC.VC.opendb-shm
+*.VC.VC.opendb-wal
 
-# Compressed archive
-*.zip
-*.tar.gz
-*.rar
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+*.cached
 
-# Log files
-*.log
-
-# Environment variables
+# Environment
 .env
 .env.local
 *.env.*
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+
+# User-specific files
+*.userprefs
+*.useroptions
+*.sln.DotSettings
+*.DotSettings
+.vs/
+```
