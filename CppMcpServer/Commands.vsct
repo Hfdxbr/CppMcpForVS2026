@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CommandTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable http://aka.ms/vscommandtable-schema" xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Externals>
-    <External guid="guidSHLMainMenu"/>
+    <External guid="{dae090bb-ae0f-4b01-9c9a-2cc9af17bc22}" />
   </Externals>
+  
   <Symbols>
     <GuidSymbol name="guidCppMcpServerPackage" value="{c7f8a9b0-1d2e-3f4a-5b6c-7d8e9f0a1b2c}" />
     <GuidSymbol name="guidCppMcpServerCmdSet" value="{d8e9f0a1-2b3c-4d5e-6f7a-8b9c0d1e2f3a}" />
+    <GuidSymbol name="guidSHLMainMenu" value="{d309f71b-c7ef-4bcd-a3b5-2b4b11e0d1a7}" />
     
     <IDSymbol name="MyMenuGroup" value="0x1020" />
     <IDSymbol name="StartMcpServer" value="0x0100" />

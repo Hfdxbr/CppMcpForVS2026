@@ -1,68 +1,49 @@
-```
 # Visual Studio Code
 .vscode/
 
-# Compiled files
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.o
-*.out
+# Visual Studio/Visual Studio C++
+Debug/
+Release/
+x64/
+x86/
+*.vcxproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Build directories
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
 build/
-dist/
-target/
+bld/
+[Bb]in/
+[Oo]bj/
 
-# Dependencies
-node_modules/
-venv/
-.venv/
-__pycache__/
-.mypy_cache/
-.pytest_cache/
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
 
-# Logs and temporary files
+# Compressed archive
+*.zip
+*.tar.gz
+*.rar
+
+# Log files
 *.log
-*.tmp
-*.swp
 
-# Environment files
+# Environment variables
 .env
 .env.local
 *.env.*
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Gradle
-.gradle/
-
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-```
