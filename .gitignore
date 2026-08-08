@@ -1,34 +1,60 @@
 ```
-# Visual Studio/Visual Studio Code
-.vscode/
-*.suo
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.out
+*.pdb
+*.ilk
+
+# Visual Studio
 *.user
 *.userosscache
-*.sln.docstates
-
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-build/
-bld/
-[Bb]in/
-[Oo]bj/
-
-# Visual C++ cache files
-ipch/
+*.suo
 *.VC.db
 *.VC.VC.opendb
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.VC.opendb
+*.VC.VC.user
+*.VC.VC.userosscache
 
-# Core dumps
-*.core
+# Visual Studio Code
+.vscode/
 
-# Package manager
-packages/
+# Logs
+*.log
 
-# Output of 'git status' in the Tools section of Visual Studio
-msbuild.log
+# Environment
+.env
+.env.local
+*.env.*
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.egg-info/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 ```
