@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<CommandTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable http://aka.ms/vscommandtable-schema" xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
   <Externals>
     <External guid="guidSHLMainMenu"/>
   </Externals>
@@ -11,7 +11,7 @@
     <IDSymbol name="StartMcpServer" value="0x0100" />
     <IDSymbol name="StopMcpServer" value="0x0101" />
   </Symbols>
-
+  
   <Menus>
     <Menu guid="guidCppMcpServerCmdSet" id="MyMenuGroup" priority="0x0600" type="Menu">
       <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
@@ -21,13 +21,13 @@
       </Strings>
     </Menu>
   </Menus>
-
+  
   <Groups>
     <Group guid="guidCppMcpServerCmdSet" id="MyMenuGroup" priority="0x0600">
       <Parent guid="guidCppMcpServerCmdSet" id="MyMenuGroup" />
     </Group>
   </Groups>
-
+  
   <Buttons>
     <Button guid="guidCppMcpServerCmdSet" id="StartMcpServer" priority="0x0100" type="Button">
       <Parent guid="guidCppMcpServerCmdSet" id="MyMenuGroup" />
