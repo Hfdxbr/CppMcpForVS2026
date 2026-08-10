@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2009-10-CommandTable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Externals>
-    <External guid="guidSHLMainMenu"/>
+    <External guid="{dae090bb-ae0f-4b01-9c9a-2cc9af17bc22}">
+      <ID>4</ID>
+      <File>msenv.idl</File>
+    </External>
   </Externals>
+  
   <Symbols>
     <GuidSymbol name="guidCppMcpServerPackage" value="{c7f8a9b0-1d2e-3f4a-5b6c-7d8e9f0a1b2c}" />
     <GuidSymbol name="guidCppMcpServerCmdSet" value="{d8e9f0a1-2b3c-4d5e-6f7a-8b9c0d1e2f3a}" />
+    <GuidSymbol name="guidSHLMainMenu" value="{D309F568-DED6-40d8-ADDA-3068AA44F0E6}" />
+    <GuidSymbol name="guidImages" value="{25402759-9E54-48C5-A4D9-D8F9BB9E42BD}" />
     
     <IDSymbol name="MyMenuGroup" value="0x1020" />
     <IDSymbol name="StartMcpServer" value="0x0100" />
     <IDSymbol name="StopMcpServer" value="0x0101" />
+    <IDSymbol name="bmpPic1" value="1" />
+    <IDSymbol name="bmpPic2" value="2" />
   </Symbols>
-
+  
   <Menus>
     <Menu guid="guidCppMcpServerCmdSet" id="MyMenuGroup" priority="0x0600" type="Menu">
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_MM_TOOLSADDINS" />
+      <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
       <Strings>
         <ButtonText>CppMcpServer</ButtonText>
         <CommandName>CppMcpServerMenu</CommandName>
       </Strings>
     </Menu>
   </Menus>
-
+  
   <Groups>
     <Group guid="guidCppMcpServerCmdSet" id="MyMenuGroup" priority="0x0600">
       <Parent guid="guidCppMcpServerCmdSet" id="MyMenuGroup" />
     </Group>
   </Groups>
-
+  
   <Buttons>
     <Button guid="guidCppMcpServerCmdSet" id="StartMcpServer" priority="0x0100" type="Button">
       <Parent guid="guidCppMcpServerCmdSet" id="MyMenuGroup" />

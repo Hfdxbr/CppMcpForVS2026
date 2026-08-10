@@ -1,40 +1,60 @@
 ```
+# Build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.out
+*.pdb
+*.ilk
+
+# Visual Studio
+*.user
+*.userosscache
+*.suo
+*.VC.db
+*.VC.VC.opendb
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.VC.opendb
+*.VC.VC.user
+*.VC.VC.userosscache
+
 # Visual Studio Code
 .vscode/
 
-# Visual Studio/MSBuild
-bin/
-obj/
-Debug/
-Release/
-*.user
-*.userosscache
-*.sln.docstates
-
-# Dependencies
-packages/
-node_modules/
+# Logs
+*.log
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Logs
-*.log
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.egg-info/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
 
 # OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
-
-# Build artifacts
-*.dll
-*.exe
-*.pdb
-*.nupkg
-*.vsix
-
-# Temporary files
-*.tmp
-*.temp
 ```
