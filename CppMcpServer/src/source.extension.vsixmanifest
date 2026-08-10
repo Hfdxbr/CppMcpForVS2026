@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/visualstudio-stshub/2008/extensionmanifest/1.0">
+  <Metadata>
+    <Identity Id="CppMcpServer" Version="1.0.0" Language="en-US" Publisher="CppMcpServer" />
+    <DisplayName>C++ MCP Server</DisplayName>
+    <Description>MCP server exposing VS code-analysis and build tools over HTTP + JSON-RPC</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14,)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[17.14,)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.14,)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.14,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Extension" Path="|" />
+  </Assets>
+</PackageManifest>
