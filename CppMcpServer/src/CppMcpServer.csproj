@@ -9,6 +9,8 @@
     <DeployExtension>false</DeployExtension>
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
     <EnableDynamicLoading>true</EnableDynamicLoading>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+    <VsixType>v3</VsixType>
   </PropertyGroup>
   
   <ItemGroup>
@@ -22,6 +24,7 @@
   <ItemGroup>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
+      <VsixSubType>Manifest</VsixSubType>
     </None>
   </ItemGroup>
   
