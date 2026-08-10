@@ -1,0 +1,31 @@
+```
+# Build artifacts
+*.vsixmanifest
+obj/
+bin/
+*.dll
+*.exe
+*.pdb
+*.nupkg
+*.snk
+# Dependencies
+packages/
+node_modules/
+# Logs and temp files
+*.log
+*.tmp
+# Environment
+.env
+.env.local
+.env.*
+# Editors
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# OS generated files
+.DS_Store
+Thumbs.db
+```

@@ -1,14 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.VisualStudio.Sdk.BuildTasks">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <OutputType>Library</OutputType>
     <RootNamespace>CppMcpServer</RootNamespace>
     <AssemblyName>CppMcpServer</AssemblyName>
+    <GeneratePkgDefFile>true</GeneratePkgDefFile>
+    <CreateVsixContainer>true</CreateVsixContainer>
+    <DeployExtension>false</DeployExtension>
+    <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Extensibility.Sdk" Version="17.13.*" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.13.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <VsixManifest Include="source.extension.vsixmanifest" />
+  </ItemGroup>
+  
 </Project>
