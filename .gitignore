@@ -2,33 +2,51 @@
 # Build artifacts
 bin/
 obj/
-*.exe
 *.dll
+*.exe
 *.pdb
-*.userprefs
-*.userosscache
-*.sln.docstates
+*.so
+*.dylib
+*.class
+*.o
+*.obj
+*.a
+*.lib
+*.out
 
 # Dependencies
 packages/
 node_modules/
-vendor/
-
-# Logs
-*.log
-
-# Environment
+venv/
+.venv/
 .env
 .env.local
 *.env.*
 
-# Editors
-.vscode/
-.idea/
+# Logs and temp files
+*.log
+*.tmp
+*.temp
 *.swp
 *.swo
 
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+*.userprefs
+*.user
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Distribution / packaging
+dist/
+build/
+target/
 ```
