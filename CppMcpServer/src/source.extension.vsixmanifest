@@ -6,14 +6,14 @@
     <Description>MCP server exposing VS code-analysis and build tools over HTTP + JSON-RPC</Description>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,)" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[17.0,)" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0,)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.14,)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[17.14,)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.14,)" />
   </Installation>
   <Dependencies>
-    <Dependency Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" />
+    <Dependency Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.14,)" />
   </Dependencies>
   <Assets>
-    <Asset Type="Microsoft.VisualStudio.Assembly" Path="|CppMcpServer.dll|" />
+    <Asset Type="Microsoft.VisualStudio.Extension" Path="|" />
   </Assets>
 </PackageManifest>
